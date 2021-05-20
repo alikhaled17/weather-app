@@ -13,4 +13,4 @@ You can check the live project from [here](https://weatherapp-iti-frontend.netli
 
 ## Demo
 
-![demo](https://weatherapp-iti-frontend.netlify.app/weather.gif)
+![demo](./weather.gif)
