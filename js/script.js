@@ -46,10 +46,16 @@ var myUser = $('.sign-in #user-name'),
 
 try {
     signInButt.addEventListener('click', () => {
-        var storedName = localStorage.getItem('name').toLowerCase(),
-            storedPw = localStorage.getItem('pass').toLowerCase();
+        var storedName = localStorage.getItem('name'),
+            storedPw = localStorage.getItem('pass');
             storedStatus = localStorage.getItem('status');
-        if(myUser.value.toLowerCase() !== storedName || myUserPass.value.toLowerCase() !== storedPw) {
+        
+        if(
+            !(storedName) 
+            || myUser.value.toLowerCase() !== storedName.toLowerCase() 
+            || myUserPass.value.toLowerCase() !== storedPw.toLowerCase()
+        ) 
+        {
             signInMsg.innerHTML = "Your name or password not correct!";
             signInMsg.classList.add('wrong');
             setTimeout(() => {
