@@ -7,11 +7,13 @@
   <title>Weather App</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="card">
+    <h2 style="margin-top: 0; padding: 0;">Wether app</h2>
+    <h5 id="welcome-msg">Welcome</h5>
     <div class="search">
       <input type="text" class="search-bar" placeholder="Search">
       <button>
@@ -34,9 +36,15 @@
       <div class="humidity">Humidity: 5%</div>
       <div class="wind">Wind speed: 17.9 km/h</div>
     </div>
+    <br>
+    <hr>
+    <div id="diactivate" style="display: flex; justify-content: space-between; padding: 10px 15px;">
+        <span>Diactivate account</span>
+        <span>Logout</span>
+    </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

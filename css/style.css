@@ -4,12 +4,12 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: #222;
-  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
   font-size: 120%;
 }
- 
+
 .card {
   background: #000000c7;
   color: white;
@@ -18,9 +18,7 @@ body {
   width: 100%;
   max-width: 420px;
   margin: 1em;
-  
 }
-
 
 .search {
   display: flex;
@@ -95,4 +93,15 @@ h1.temp {
   position: absolute;
   top: 0;
   left: 20px;
+}
+
+#diactivate > span {
+  border: 2px solid rgba(255, 255, 255, 0.582);
+  border-radius: 3px;
+  padding: 3px 6px;
+  cursor: pointer;
+}
+
+#diactivate > span:hover {
+  background-color: rgba(255, 255, 255, 0.247);
 }

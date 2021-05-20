@@ -1,5 +1,39 @@
-let weather = {
+(function() {
+  
+  var storedName = localStorage.getItem('name'),
+      storedPass = localStorage.getItem('pass');
+      storedStatus = localStorage.getItem('status');
 
+
+  if(storedName != "" || storedPass != ""){
+    if(storedStatus == 'true') {
+      document.getElementById('welcome-msg').innerHTML = `| Welcome ${storedName.toUpperCase()} !`;
+    } else {
+      window.location.replace("./src/login.html");
+    }
+  } else {
+    window.location.replace("./src/signup.html");
+  }
+})();
+
+let deactive = document.querySelector("#diactivate span:nth-child(1)"),
+    logout = document.querySelector("#diactivate span:nth-child(2)");
+
+deactive.addEventListener('click', () => {
+  localStorage.setItem('name', '');
+  localStorage.setItem('pass', '');
+  localStorage.setItem('status', '');  
+  location.reload();
+})
+
+
+logout.addEventListener('click', () => {
+  localStorage.setItem('status', 'false');
+  location.reload();
+})
+
+
+let weather = {
   "apiKey": "4239506a5c4a1d3dff49bdfd88047f25",
 
   fetchWeather: function (city) {
