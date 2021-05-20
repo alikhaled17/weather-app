@@ -2,7 +2,7 @@
 
 This website is made using JS as backend and HTML CSS as frontend
 
-You can check the live project from [here]()
+You can check the live project from [here](https://weatherapp-iti-frontend.netlify.app/src/login.html)
 
 ## contributers
 
